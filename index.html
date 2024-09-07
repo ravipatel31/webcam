@@ -45,7 +45,7 @@ function onScanFailure(error) {
 const html5QrCode = new Html5Qrcode("reader");
 const qrCodeSuccessCallback = (decodedText, decodedResult) => {
     // const result=decodedResult;
-    window.confirm(`Code matched = ${decodedText}`, decodedResult);
+    window.alert(`Code matched = ${decodedText}`, decodedResult);
     
 };
 const config = { fps: 10, qrbox: { width: 650, height: 200 } };
